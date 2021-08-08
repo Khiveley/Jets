@@ -27,23 +27,27 @@ public class AirField {
 			String moreJets;
 			Jet jet = null;
 			while ((moreJets = bufIn.readLine()) != null) {
-				// JetFighter,Mikoyan-Gurevich MiG-28,670,1100,40625000
 				String[] pieces = moreJets.split(",");
 				if (pieces[0].equals("FighterJet")) {
 					jet = new FighterJet(pieces[1], Double.parseDouble(pieces[2]), Integer.parseInt(pieces[3]),
 							Long.parseLong(pieces[4]));
+					jets.add(jet);
+//					System.out.println(jet);
 				}
 					else if (pieces[0].equals("PrivateJet")) {
 						jet = new JetImpl(pieces[1], Double.parseDouble(pieces[2]), Integer.parseInt(pieces[3]),
 								Long.parseLong(pieces[4]));
+						jets.add(jet);
+//						System.out.println(jet);
 					}
 						else if (pieces[0].equals("CargoPlane")) {
 							jet = new CargoPlane(pieces[1], Double.parseDouble(pieces[2]), Integer.parseInt(pieces[3]),
 									Long.parseLong(pieces[4]));
 						jets.add(jet);
+//						System.out.println(jet);
 
 				}
-				System.out.println(jet);
+//System.out.println(jet);
 			}
 		} catch (IOException e) {
 			System.err.println(e);

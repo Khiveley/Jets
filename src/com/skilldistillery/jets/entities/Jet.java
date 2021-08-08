@@ -23,11 +23,11 @@ public abstract class Jet {
 		
 	public void fly() {
 		if (this.speed == 0 || this.range == 0 ) {
-			System.out.println(Model.getmodel, "This jet is undergoing preventative maintenance and unable to fly. ");
+			System.out.println(this.model + " is undergoing preventative maintenance and unable to fly. ");
 		}
 		else {
 			double flightDuration = this.range / this.speed;
-			System.out.println("This jet has a maximum duration of: " + flightDuration);
+			System.out.println(this.model + " has a maximum duration of: " + flightDuration + "hours.");
 		}
 	}
 	
