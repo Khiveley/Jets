@@ -27,7 +27,7 @@ public abstract class Jet {
 		}
 		else {
 			double flightDuration = this.range / this.speed;
-			System.out.println(this.model + " has a maximum duration of: " + flightDuration + "hours.");
+			System.out.println(this.model + " is flying with a maximum duration of: " + flightDuration + "hours.");
 		}
 	}
 	

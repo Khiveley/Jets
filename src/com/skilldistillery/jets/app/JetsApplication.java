@@ -151,22 +151,12 @@ public class JetsApplication {
 	}
 
 	private void fight() {
-//		boolean initialJet = true;
-//		int combatants = 0;
-//		for (Jet jet : af.getJets()) {
-//			if (jet instance of CombatReady) {
-//				((CombatReady) jet).fight(initialJet);
-//			combatants++;
-//			initialJet = false;
-//		}
-//		if (combatants == 1) {
-//			System.out.println("No other combatants.  Return to the airfield. ");
-//			if (combatants == 0) {
-//				System.out.println("No fighter jets currently available. ");
-//			}
-//
-//		}
-//	}
+		for (Jet jet : af.getJets()) {
+			if (jet instanceof CombatReady) {
+				((CombatReady) jet).fight();
+			}
+		}
+	}
 
 	private void addJet() {
 		try {
