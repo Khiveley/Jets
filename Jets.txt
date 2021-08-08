@@ -1,0 +1,7 @@
+FighterJet,Mikoyan-Gurevich MiG-28,670,1100,40625000,
+FighterJet,Grumman F-14 Tomcat,1442,1841,38000000,
+FighterJet,Douglas A-4 Skyhawk,1040,2000,860000,
+CargoPlane,Boeing C-17 Globemaster III,590,6230,256000000,
+CargoPlane,Boeing KC-135 Stratotanker,600,5000,530000,
+PrivateJet,Gulfstream G500,710,5300,44000000, 
+PrivateJet,Cessna Citation M2,465,1784,7044000, 
