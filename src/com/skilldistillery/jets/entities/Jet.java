@@ -23,7 +23,7 @@ public abstract class Jet {
 		
 	public void fly() {
 		if (this.speed == 0 || this.range == 0 ) {
-			System.out.println("This jet is undergoing preventative maintenance and unable to fly. ");
+			System.out.println(Model.getmodel, "This jet is undergoing preventative maintenance and unable to fly. ");
 		}
 		else {
 			double flightDuration = this.range / this.speed;

@@ -3,10 +3,12 @@ package com.skilldistillery.jets.app;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.List;
 import java.util.Scanner;
 
 import com.skilldistillery.jets.entities.AirField;
 import com.skilldistillery.jets.entities.FighterJet;
+import com.skilldistillery.jets.entities.Jet;
 
 public class JetsApplication {
 	private AirField airField = new AirField();
@@ -15,11 +17,12 @@ public class JetsApplication {
 	public static void main(String[] args) {
 		JetsApplication jetsApp = new JetsApplication();
 		jetsApp.launch();
+		jetsApp.userMenu();
 
 	}
 
 	public JetsApplication() {
-//		airField = new AirField();
+		
 
 	}
 
@@ -28,6 +31,13 @@ public class JetsApplication {
 	}
 
 	public void userMenu() {
+		int option = 0;
+		while (option != '9') {
+		System.out.println("Please enter the number 1-9 for your menu selection. ");
+		option = keyboard.nextInt();
+		keyboard.nextLine();
+	
+		
 		System.out.println("*****************************************");
 		System.out.println("*                                       *");
 		System.out.println("*                -Menu-                 *");
@@ -42,7 +52,21 @@ public class JetsApplication {
 		System.out.println("*    7. Add Jet to Fleet.               *");
 		System.out.println("*    8. Remove Jet from Fleet.          *");
 		System.out.println("*    9. Quit.                           *");
-		System.out.println("*										*");
 		System.out.println("*****************************************");
+	
+		if ( option == '1') {
+			listFleet();
+		}
+		
+		
+		}
+	}
+	public void listFleet() {
+		List<Jet>jets = airField.getJets();
+	}
+
+	private void getJets() {
+		// TODO Auto-generated method stub
+		
 	}
 }
