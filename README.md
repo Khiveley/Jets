@@ -69,11 +69,11 @@ Quit exits the program.
 Feel free to review the application and entities respective code or copy and run in your IDE.
   
 ### Technology Used
-Superclass
-Getters and Setters
-Interfaces
-Input/Output
+* Superclass
+* Getters and Setters
+* Interfaces
+* Input/Output
   
 ### Lessons Learned
   
-Each week has increased in difficulty.  The largest difficulty was initially getting started with trying to determine how to get my buffered reader to read the Jets.txt file into my application.  With still finding getters and setters challenging, it was helpful to follow the prompts provided by Eclipse for suggestions as to pulling in each class' respective fields.  The uml diagram and trying to articulate what I wanted to do with my code prior to acutally coding helped tremendously. 
+Each week has increased in difficulty.  Getting started and breaking down what I should be doing is a challenge; however, using a uml diagram and trying to articulate what I wanted to do with my code prior to acutally coding helped tremendously.  The largest difficulty initially was trying to determine how to get my buffered reader to read the Jets.txt file into my application.  With still finding getters and setters challenging, it was helpful to follow the prompts provided by Eclipse for suggestions as to pulling in each class' respective fields into the Jets Application. I had issues primarily with getting my menu to run. I switched from a while loop with if and else if statements to a switch and changed my criteria for the while loop and it worked.  At some point in the near future, I'd like to revisit this project and work on the stretch goals.
